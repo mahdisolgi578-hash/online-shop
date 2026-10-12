@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازارینو/ساخت حساب کاربری</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+          <a href="#" class="header__logo">بازارینو</a>
+        </div>
+        <nav class="header-nav">
+          <a href="#" class="header__link">خانه</a>
+          <a href="#" class="header__link">فروشگاه</a>
+          <a href="#" class="header__link">دسته بندی ها </a>
+          <a href="#" class="header__link">درباره ما</a>
+        </nav>
+        <div class="header__actions">
+          <a href="./register.html" class="header__login">ورود</a>
+          <a href="#" class="header__cart">سبد خرید</a>
+        </div>
+      </header>
+      <main class="main__main--center">
+        <section class="register">
+            <h1 class="register__title">ساخت حساب کاربری</h1>
+            <p class="register__subtitle">برای خرید سریع تر،حساب بازارینو را بسازید</p>
+            <form class="form" action="#" method="get">
+                <div class="form__field">
+                    <label class="form__label" for="email">ایمیل</label>
+                    <input class="form__input" type="email" name="email" id="email" 
+                    placeholder="name@example.com" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="phone">شماره همراه</label>
+                    <input class="form__input" type="tel" name="phone" id="phone" 
+                    placeholder="09123456789" pattern="09[0-9]{9}" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="password">رمز عبور</label>
+                    <input class="form__input" type="password" name="password" id="password" 
+                    placeholder="حداقل 8 کاراکتر" minlength="10" maxlength="35" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="password-confirm">تکرار رمز عبور</label>
+                    <input class="form__input" type="password" name="password-confirm" id="password-confirm" 
+                    placeholder="رمز عبور را دوباره وارد کنید" minlength="10" maxlength="35" required>
+                </div>
+                <div class="form__action">
+                    <button class="button__button--outline" type="reset">پاک کردن</button>
+                    <button class="button__button--primary" type="submit">ثبت نام</button>
+                </div>
+            </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <p class="footer__text">بازارینو؛خرید ساده و مطمئن</p>
+          <ul class="footer__links">
+            <li><a href="#"></a>پشتیبانی</li>
+            <li><a href="#"></a>قوانین و شرایط</li>
+            <li><a href="#"></a>اینستاگرام</li>
+          </ul>
+          <p class="footer__year">1406</p>
+        </div>
+      </footer>
+</body>
+</html>
