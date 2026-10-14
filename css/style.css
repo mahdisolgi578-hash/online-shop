@@ -21,7 +21,8 @@
     --color-primary: #0f766e;
     --color-primary-hover: #f59e0b;
     --color-border: #e5e7eb;
-    --color-footer:
+    --color-footer:#01172a;
+    --color-footer-text:#e2e8f0;
 
     --space-0: 4px;
     --space-1: 8px;
@@ -100,4 +101,30 @@ a {
 }
 .header__login:hover {
     color: var(--color-primary);
+}
+/*==============main==============*/
+
+/*========footer=======*/
+.footer {
+background-color: var(--color-text);
+color: var(--color-footer-text);
+font-size: 0.875rem;
+}
+.footer__inner {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: var(--space-1);
+    padding:  var(--space-3);
+}
+.footer__links {
+    display: flex;
+    gap: var(--space-1);
+}
+.footer__links li + li::before {
+    content: ".";
+    margin-inline-end: var(--space-1);
 }
