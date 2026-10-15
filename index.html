@@ -21,8 +21,8 @@
         <a href="#" class="header__link">درباره ما</a>
       </nav>
       <div class="header__actions">
-        <a href="./register.html" class="header__cart">سبد خرید</a>
-        <a href="#" class="header__login">ورود</a>
+        <a href="#" class="header__cart">سبد خرید</a>
+        <a href="./register.html" class="header__login">ورود</a>
       </div>
     </div>
   </header>
@@ -41,37 +41,44 @@
             <legend class="sidebar__legend">دسته بندی</legend>
             <div class="check">
               <input class="check__input" type="checkbox" />
+              <span class="check__box"></span>
               <span class="check-label">دیجیتال و گجت</span>
             </div>
             <div class="check">
               <input class="check__input" type="checkbox" />
+              <span class="check__box"></span>
               <span>خانه و سبک زندگی</span>
             </div>
             <div class="check">
               <input class="check__input" type="checkbox" />
+              <span class="check__box"></span>
               <span>لوازم شخصی</span>
             </div>
           </fieldset>
           <fieldset class="sidebar__group">
             <legend class="sidebar__legend">محدوده قیمت</legend>
             <div class="radio">
-              <input class="radio__input" type="radio" />
+              <input class="radio__input" name="price" type="radio" />
+              <span class="radio__dot"></span>
               <span class="radio__label">کمتر از 2 میلیون</span>
             </div>
             <div class="radio">
-              <input class="radio__input" type="radio" />
+              <input class="radio__input" name="price" type="radio" />
+              <span class="radio__dot"></span>
               <span class="radio__label">2 تا 5 میلیون</span>
             </div>
             <div class="radio">
-              <input class="radio__input" type="radio" />
-              <span class="radio__label">بیشتر از 5 میلیون</span>
+              <input class="radio__input" name="price" type="radio" />
+              <span class="radio__dot"></span>
+              <label class="radio__label">بیشتر از 5 میلیون</label>
             </div>
           </fieldset>
           <fieldset class="sidebar__group">
             <legend class="sidebar__legend">امتیاز کاربران</legend>
             <div class="check">
-              <input class="check__input" type="checkbox" />
-              <span class="check__label">4 ستاره به بالا</span>
+              <input class="check__input" type="checkbox" id="star"/>
+              <span class="check__box"></span>
+              <label class="check__label" for="star">4 ستاره به بالا</label>
             </div>
           </fieldset>
         </aside>
