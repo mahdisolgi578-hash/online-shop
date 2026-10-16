@@ -23,6 +23,7 @@
   --color-bg: #f8fafd;
   --color-surface: #f8fafd;
   --color-text: #14213d;
+  --color-text-muted: #64748b;
   --color-primary: #0f766e;
   --color-primary-hover: #f59e0b;
   --color-border: #e5e7eb;
@@ -115,6 +116,7 @@ a {
 .guid {
     margin-top: var(--space-4);
     font-size: 0.875rem;
+    color: var(--color-text-muted);
 }
 .page__title {
     font-weight: 800;
@@ -123,6 +125,7 @@ a {
 }
 .page__subtitle {
     font-size: 0.875rem;
+    color: var(--color-text-muted);
 }
 /*========catalog=========*/
 .catalog {
@@ -163,6 +166,12 @@ margin-bottom: var(--space-5);
     font-weight: 600;
     font-size: 0.875;
 }
+.check__label {
+  color: var(--color-text-muted);
+}
+.radio__label {
+  color: var(--color-text-muted);
+}
 /*==========toolbar============*/
 .toolbar {
   margin-bottom: var(--space-2);
@@ -182,11 +191,13 @@ width: 100%;
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
+  color: var(--color-text-muted);
 }
 .toolbar__select {
   font: inherit;
   border: 0;
   background: transparent;
+  color: inherit;
 }
 /*=============card=========*/
 .product-card {
@@ -222,6 +233,13 @@ gap: var(--space-1);
 .product-card__rating {
   font-size: 0.875rem;
   color: #b45309;
+}
+.product-card__badge {
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.75rem;
+  padding: 2px var(--space-1);
+  border-radius: 100px;
 }
 /*=======checkbox and radio======*/
 .check,.radio {

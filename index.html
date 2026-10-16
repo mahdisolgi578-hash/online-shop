@@ -40,43 +40,43 @@
           <fieldset class="sidebar__group">
             <legend class="sidebar__legend">دسته بندی</legend>
             <div class="check">
-              <input class="check__input" type="checkbox" />
+              <input class="check__input" type="checkbox" name="filters" id="digital-gadget" />
               <span class="check__box"></span>
-              <span class="check-label">دیجیتال و گجت</span>
+              <label class="check__label" for="digital-gadget">دیجیتال و گجت</label>
             </div>
             <div class="check">
-              <input class="check__input" type="checkbox" />
+              <input class="check__input" type="checkbox" name="filters" id="lifestyle" />
               <span class="check__box"></span>
-              <span>خانه و سبک زندگی</span>
+              <label for="lifestyle" class="check__label">خانه و سبک زندگی</label>
             </div>
             <div class="check">
-              <input class="check__input" type="checkbox" />
+              <input class="check__input" type="checkbox" id="supplies" name="filters" />
               <span class="check__box"></span>
-              <span>لوازم شخصی</span>
+              <label for="supplies" class="check__label">لوازم شخصی</label>
             </div>
           </fieldset>
           <fieldset class="sidebar__group">
             <legend class="sidebar__legend">محدوده قیمت</legend>
             <div class="radio">
-              <input class="radio__input" name="price" type="radio" />
+              <input class="radio__input" name="price" type="radio" id="price-2" />
               <span class="radio__dot"></span>
-              <span class="radio__label">کمتر از 2 میلیون</span>
+              <label class="radio__label" for="price-2">کمتر از 2 میلیون</label>
             </div>
             <div class="radio">
-              <input class="radio__input" name="price" type="radio" />
+              <input class="radio__input" name="price" type="radio" id="price-2-5" />
               <span class="radio__dot"></span>
-              <span class="radio__label">2 تا 5 میلیون</span>
+              <label class="radio__label" for="price-2-5">2 تا 5 میلیون</label>
             </div>
             <div class="radio">
-              <input class="radio__input" name="price" type="radio" />
+              <input class="radio__input" name="price" type="radio" id="price-5"/>
               <span class="radio__dot"></span>
-              <label class="radio__label">بیشتر از 5 میلیون</label>
+              <label class="radio__label" for="price-5">بیشتر از 5 میلیون</label>
             </div>
           </fieldset>
           <fieldset class="sidebar__group">
             <legend class="sidebar__legend">امتیاز کاربران</legend>
             <div class="check">
-              <input class="check__input" type="checkbox" id="star"/>
+              <input class="check__input" type="checkbox" name="star" id="star"/>
               <span class="check__box"></span>
               <label class="check__label" for="star">4 ستاره به بالا</label>
             </div>
@@ -106,6 +106,7 @@
               <a href="./product.html" class="product-card__link">
                 <img src="./asset/headphone.jpg" alt="headphone" class="product-card__image" />
                 <div class="product-card__body">
+                  <span class="product-card__badge">ارسال رایگان</span>
                   <h3 class="product-card__title">هدفون بی سیم آریا</h3>
                   <div class="product-card__text">
                     <span class="product-card__price">2،490،000 تومان</span>
@@ -119,6 +120,7 @@
               <a href="./product.html" class="product-card__link">
                 <img src="./asset/watch.jpg" alt="watch" class="product-card__image" />
                 <div class="product-card__body">
+                  <span class="product-card__badge">ارسال رایگان</span>
                   <h3 class="product-card__title">ساعت هوشمند نوا</h3>
                   <div class="product-card__text">
                     <span class="product-card__price">3،990،000 تومان</span>
@@ -131,7 +133,8 @@
             <article class="product-card">
               <a href="./product.html" class="product-card__link">
                 <img src="./asset/camera.jpg" alt="camera" class="product-card__image" />
-                <div class="product-card__body">
+                <div class="product-card__body"> 
+                  <span class="product-card__badge">ارسال رایگان</span>
                   <h3 class="product-card__title">دوربین چاپ فوری</h3>
                   <div class="product-card__text">
                     <span class="product-card__price">5،790،000تومان</span>
