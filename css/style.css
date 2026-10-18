@@ -57,7 +57,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
-  min-width: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -494,6 +494,13 @@ align-items: center;
 .review__text {
   font-size: 0.875rem;
   color: var(--color-text-muted);
+}
+/*============= register ============*/
+.main--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4) var(--space-2);
 }
 /*==============footer=============*/
 .footer {
