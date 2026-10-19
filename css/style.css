@@ -29,6 +29,8 @@
   --color-border: #e5e7eb;
   --color-footer: #01172a;
   --color-footer-text: #e2e8f0;
+  --cart-bg: #d9ffe2;
+  --cart-bg-hover: #d2f0e5;
 
   --space-0: 4px;
   --space-1: 8px;
@@ -48,6 +50,7 @@
   --badge-bg: #dcfce7;
   --badge-text: #166534;
   --thumb-bg: #ffffff;
+
 
   --valid:#008000;
   --invalid: #ff0000;
@@ -113,13 +116,13 @@ a {
   width: 100%;
 }
 .header__cart {
-  background-color: #d9ffe2;
+  background-color: var(--cart-bg);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius);
   color: var(--color-primary);
 }
 .header__cart:hover {
-  background-color: #d2f0e5;
+  background-color: var(--cart-bg-hover);
 }
 .header__login:hover {
   color: var(--color-primary);
@@ -540,6 +543,7 @@ align-items: center;
   border: 1px solid var(--color-border);
   border-radius: var(--radious-2);
   margin-bottom: var(--space-1);
+  background-color: var(--color-surface);
 }
 .form__input::placeholder {
   color: var(--color-text-muted);
@@ -568,6 +572,7 @@ font-weight: 600;
 }
 .button__button--outline {
   color: var(--color-primary);
+  background-color: var(--color-surface);
 }
 .button__button--primary:hover {
   background-color: var(--color-primary-hover);
@@ -587,7 +592,7 @@ font-weight: 600;
 }
 /*==============footer=============*/
 .footer {
-  background-color: var(--color-text);
+  background-color: var(--color-footer);
   color: var(--color-footer-text);
   font-size: 0.875rem;
 }
@@ -608,4 +613,24 @@ font-weight: 600;
 .footer__links li + li::before {
   content: ".";
   margin-inline-end: var(--space-1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #e2e8f0;
+    --color-text-muted: #94a3b8;
+    --color-primary: #2dd4bf;
+    --color-primary-hover: #5eead4; 
+    --color-border: #334155;
+    --color-footer: #020617;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --cart-bg:#064e3b ;
+    --cart-bg-hover: #065f46 ;
+    --star: #fbbf24;
+    --stock: #4ade80;
+    --badge-bg: #064e3b;
+    --badge-text: #6ee7b7;
+    --thumb-bg: #1e293b;
+  }
 }
