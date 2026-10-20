@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بازارینو/هدفون بی سیم آریا</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__inner">
-        <a href="#" class="header__logo">بازارینو</a>
-        <nav class="header-nav">
-          <a href="#" class="header__link">خانه</a>
-          <a href="#" class="header__link">فروشگاه</a>
-          <a href="#" class="header__link">دسته بندی ها </a>
-          <a href="#" class="header__link">درباره ما</a>
-        </nav>
-        <div class="header__actions">
-          <a href="./register.html" class="header__cart">سبد خرید</a>
-          <a href="#" class="header__login">ورود</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بازارینو/هدفون بی سیم آریا</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">بازارینو</a>
+      <nav class="header-nav">
+        <a href="#" class="header__link">خانه</a>
+        <a href="#" class="header__link">فروشگاه</a>
+        <a href="#" class="header__link">دسته بندی ها </a>
+        <a href="#" class="header__link">درباره ما</a>
+      </nav>
+      <div class="header__actions">
+        <a href="./register.html" class="header__cart">سبد خرید</a>
+        <a href="#" class="header__login">ورود</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumb">خانه/دیجیتال و گجت/هدفون بی سیم آریا</nav>
+      <section class="product">
+        <div class="gallery">
+          <input type="radio" class="gallery__radio" name="gallery" id="img1" checked>
+          <input type="radio" class="gallery__radio" name="gallery" id="img2">
+          <input type="radio" class="gallery__radio" name="gallery" id="img3">
+          <div class="gallery__thumbs">
+            <label for="img1" class="gallery__thumb gallery__thumb--1"><img src="./asset/headphone.png"
+                alt="headphone front view" /></label>
+            <label for="img2" class="gallery__thumb gallery__thumb--2"><img src="./asset/headphone2.png"
+                alt="headphone white view" /></label>
+            <label for="img3" class="gallery__thumb gallery__thumb--3"><img src="./asset/headphone3.png"
+                alt="headphone top view" /></label>
+          </div>
+          <div class="gallery__main">
+            <div class="gallery__slide gallery__slide--1"><img src="./asset/headphone.png" alt="headphone front view" />
+            </div>
+            <div class="gallery__slide gallery__slide--2"><img src="./asset/headphone2.png"
+                alt="headphone white view" /></div>
+            <div class="gallery__slide gallery__slide--3"><img src="./asset/headphone3.png" alt="headphone top view" />
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <nav class="breadcrumb">خانه/دیجیتال و گجت/هدفون بی سیم آریا</nav>
-        <section class="product">
-            <div class="gallery">
-                <input type="radio" class="gallery__radio" name="gallery" id="img1" checked>
-                <input type="radio" class="gallery__radio" name="gallery" id="img2">
-                <input type="radio" class="gallery__radio" name="gallery" id="img3">
-                <div class="gallery__thumbs">
-                    <label for="img1" class="gallery__thumb gallery__thumb--1"><img src="./asset/headphone.png" alt="headphone front view"/></label>
-                    <label for="img2" class="gallery__thumb gallery__thumb--2"><img src="./asset/headphone2.png" alt="headphone white view"/></label>
-                    <label for="img3" class="gallery__thumb gallery__thumb--3"><img src="./asset/headphone3.png" alt="headphone top view"/></label>
-                </div>
-                <div class="gallery__main">
-                    <div class="gallery__slide gallery__slide--1"><img src="./asset/headphone.png" alt="headphone front view"/></div>
-                    <div class="gallery__slide gallery__slide--2"><img src="./asset/headphone2.png" alt="headphone white view"/></div>
-                    <div class="gallery__slide gallery__slide--3"><img src="./asset/headphone3.png" alt="headphone top view"/></div>
-                </div>
-            </div>
-            <div class="product__info">
-              <span class="badge">پرفروش</span>
-              <h1 class="product__title">هدفون بی سیم آریا مدل pro</h1>
-              <div class="product__rating">
-                <span class="product__stars">*****</span>
-                <span class="product__score">4/7 از 5</span>
-                <span class="product__count">128 دیدگاه</span>
-              </div>
-              <div class="description">
-                <p class="description__info">
-                    هدفون سبک و خوش صدا برای موسیقی،تماس و کار روزانه،طراحی
-                    ارگونومیم،اتصال پایدار بلوتوث و باتری 30 ساعته،تجربه ای راحت در
-                    تمام روز می سازد.
-                  </p>
-            </div>
-              <div class="product__buy">
-                <span class="product__price">2،490،000 تومان</span>
-                <button class="button button--primary" type="button">
-                  افزودن به سبد خرید
-                </button>
-              </div>
-              <p class="product__stock">
-                موجود در انبار.ارسال تا 24 ساعت آینده
-              </p>
-            </div>
-            </div>
-        </section>
-        <section class="reviews">
-          <h2 class="review__title">دیدگاه کاربران</h2>
-          <article class="review">
-            <div class="review__header">
-              <span class="review__author">رها محمدی</span>
-              <span class="review__rate">*****</span>
-              <p class="review__text">
-                کیفیت صدا و راحتی روی گوش عالی است؛برای استفاده روزمره پیشنهاد
-                می کنم.
-              </p>
-            </div>
-          </article>
-          <article class="review">
-            <div class="review__header">
-              <span class="review__author">امیر رضایی</span>
-              <span class="review__rate">*****</span>
-              <p class="review__text">
-                باتری خوب و بسته بندی مرتب؛اتصال به گوشی هم خیلی سریع انجام شد.
-              </p>
-            </div>
-          </article>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__inner">
-        <p class="footer__text">بازارینو؛خرید ساده و مطمئن</p>
-        <ul class="footer__links">
-          <li><a href="#"></a>پشتیبانی</li>
-          <li><a href="#"></a>قوانین و شرایط</li>
-          <li><a href="#"></a>اینستاگرام</li>
-        </ul>
-        <p class="footer__year">۱۴۰۶</p>
-      </div>
-    </footer>
-  </body>
+        <div class="product__info">
+          <span class="badge">پرفروش</span>
+          <h1 class="product__title">هدفون بی سیم آریا مدل pro</h1>
+          <div class="product__rating">
+            <span class="product__stars">*****</span>
+            <span class="product__score">4/7 از 5</span>
+            <span class="product__count">128 دیدگاه</span>
+          </div>
+          <div class="description">
+            <p class="description__info">
+              هدفون سبک و خوش صدا برای موسیقی،تماس و کار روزانه،طراحی
+              ارگونومیم،اتصال پایدار بلوتوث و باتری 30 ساعته،تجربه ای راحت در
+              تمام روز می سازد.
+            </p>
+          </div>
+          <div class="product__buy">
+            <span class="product__price">2،490،000 تومان</span>
+            <button class="button button--primary" type="button">
+              افزودن به سبد خرید
+            </button>
+          </div>
+          <p class="product__stock">
+            موجود در انبار.ارسال تا 24 ساعت آینده
+          </p>
+        </div>
+    </div>
+    </section>
+    <section class="reviews">
+      <h2 class="review__title">دیدگاه کاربران</h2>
+      <article class="review">
+        <div class="review__header">
+          <span class="review__author">رها محمدی</span>
+          <span class="review__rate">*****</span>
+          <p class="review__text">
+            کیفیت صدا و راحتی روی گوش عالی است؛برای استفاده روزمره پیشنهاد
+            می کنم.
+          </p>
+        </div>
+      </article>
+      <article class="review">
+        <div class="review__header">
+          <span class="review__author">امیر رضایی</span>
+          <span class="review__rate">*****</span>
+          <p class="review__text">
+            باتری خوب و بسته بندی مرتب؛اتصال به گوشی هم خیلی سریع انجام شد.
+          </p>
+        </div>
+      </article>
+    </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__text">بازارینو؛خرید ساده و مطمئن</p>
+      <ul class="footer__links">
+        <li><a href="#"></a>پشتیبانی</li>
+        <li><a href="#"></a>قوانین و شرایط</li>
+        <li><a href="#"></a>اینستاگرام</li>
+      </ul>
+      <p class="footer__year">۱۴۰۶</p>
+    </div>
+  </footer>
+</body>
 </html>
