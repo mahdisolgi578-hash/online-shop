@@ -171,6 +171,8 @@ a {
   flex-direction: column;
   width: 250px;
   padding: var(--space-3);
+  position: sticky;
+  top: var(--space-3);
 }
 .sidebar__title {
   font-size: 1.125rem;
