@@ -231,7 +231,7 @@ a {
   width: 100%;
   height: 250px;
   object-fit: contain;
-  background-color: #2dd4bf;
+  background-color: #cad2c5;
 }
 .product-card__body {
   padding: var(--space-2);
@@ -374,6 +374,7 @@ a {
   margin-left: var(--space-3);
   border: 1px solid var(--color-primary);
   border-radius: var(--radious-2);
+  background-color: #cad2c5;
 }
 .gallery__slide {
   width: 100%;
@@ -401,11 +402,6 @@ a {
 .gallery__thumb:hover {
   border-color: var(--color-primary);
 }
-/*#img1:checked ~ .gallery__thumbs .gallery__thumb--1,
-#img2:checked ~ .gallery__thumbs .gallery__thumb--2,
-#img3:checked ~ .gallery__thumbs .gallery__thumb--3 {
-  border-color: var(--color-primary);
-}*/
 .product__info {
   flex: 1;
   min-width: 0;
