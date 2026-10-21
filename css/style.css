@@ -185,7 +185,7 @@ a {
 .sidebar__legend {
   margin-bottom: var(--space-1);
   font-weight: 600;
-  font-size: 0.875;
+  font-size: 0.875rem;
 }
 .check__label {
   color: var(--color-text-muted);
@@ -633,6 +633,15 @@ a {
   }
 }
 /*================= responsive===========*/
+.filter-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.filter-button {
+  display: none;
+}
+
 @media (max-width: 768px) {
   /*====header====*/
   .header__inner {
@@ -701,6 +710,22 @@ a {
 /*=====register======*/
 .register {
   padding: var(--space-2);
+}
+/*=========sidebar button========*/
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: var(--space-1);
+}
+.filter-toggle:checked ~ .sidebar {
+  display: block;
+  position: static;
+  width: 100%;
+}
+.filter-button:hover {
+  border-color: var(--color-primary);
 }
 }
 @media (max-width: 480px) {
