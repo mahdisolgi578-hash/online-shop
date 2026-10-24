@@ -230,6 +230,10 @@ a {
   border: 1px solid var(--color-border);
   border-radius: var(--radious-2);
   overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.product-card:hover {
+  transform: translateY(-4px);
 }
 .product-card__image {
   width: 100%;
@@ -602,7 +606,8 @@ a {
   font-size: 0.875rem;
 }
 .footer__inner {
-  width: 1200px;
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
