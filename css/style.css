@@ -501,7 +501,6 @@ a {
   margin-left: var(--space-2);
 }
 .review__rate {
-  font-size: 1.25rem;
   color: var(--star);
 }
 .review__text {
