@@ -55,9 +55,6 @@
   --invalid: #ff0000;
 }
 /*=========base==========*/
-html {
-  width: 100%;
-}
 body {
   font-family: Vazirmatn;
   background: var(--color-bg);
